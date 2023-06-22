@@ -1,0 +1,15 @@
+applications:
+- api_domain: api.staging.jit.io
+  application_name: MyApp
+  authentication_key: password
+  authentication_mode: selenium
+  authentication_value: ${{ jit_secrets.web_scan_authentication_value }}
+  exclude_paths: []
+  login_page_url: https://platform.staging.jit.io/login
+  password: encrypted$AQICAHiKRGWn+EHruY/484rO7pJxzFGc/JSwAlIzIzxLWzk4OwGaA7SrUterDd5M9c+DB891AAAAqTCBpgYJKoZIhvcNAQcGoIGYMIGVAgEAMIGPBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDOoHmrxgUsQ8Jo4SJwIBEIBiUV63Oze7K1I5zIv5uwFeHu8NtlYhdHgmEYT/bTHJcwwRFpu48ym4FPEe7gMTG2xZSCZiG+NIWhZBorV/ih4+0g9vZpufazmpAV7kYrksxDyhYap1+eKgOyfvFMFruVcRacs=
+  password_css_selector: ''
+  password_ref: ${{ jit_secrets.web_scan_password }}
+  target_url: ' https://platform.staging.jit.io'
+  type: web
+  username: guy+zap.staging@jit.io
+  username_css_selector: ''
